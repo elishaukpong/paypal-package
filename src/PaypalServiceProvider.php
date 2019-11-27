@@ -23,6 +23,9 @@ class PaypalServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->publishes([
+            __DIR__.'/config' => realpath('config'),
+        ],'paypal-config');
+
     }
 }
