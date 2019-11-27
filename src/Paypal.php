@@ -193,7 +193,7 @@ class Paypal
 
     public function getPaymentData()
     {
-        $this->executePayment()->extractPaymentData();
+        return $this->executePayment()->extractPaymentData();
     }
 
     function executePayment()
@@ -208,7 +208,7 @@ class Paypal
         $header = array(
             "Content-Type: application/json",
             'Content-Length: ' . strlen($data_string),
-            "Authorization: Bearer " . $this->getToken()
+            "Authorization: Bearer " . $this->getAccessToken()
         );
 
         $ch = curl_init();
