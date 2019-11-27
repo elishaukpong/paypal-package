@@ -1,0 +1,17 @@
+{
+    "name": "drumzminister/paypal",
+    "description": "My brief little package abstraction of paypal api, just little",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Drumzminister",
+            "email": "ishukpong418@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "paypal/rest-api-sdk-php": "*"
+    },
+
+}
