@@ -12,6 +12,6 @@
     "minimum-stability": "dev",
     "require": {
         "paypal/rest-api-sdk-php": "*"
-    },
+    }
 
 }
